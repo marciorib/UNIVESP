@@ -1,0 +1,15 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Registros</title>
+</head>
+<body>
+    <h1>Registros Salvos</h1>
+    <ul>
+        {% for dado in dados %}
+        <li>{{ dado.cip }}: {{ dado.encomenda }}: {{ dado.orgao }}: {{ dado.datarec }}: {{ dado.pi }}: {{ dado.motivo }}: {{ dado.nome }}: {{ dado.telefone }}: {{ dado.email }}: {{ dado.novidades }}: {{ dado.mensagem }}: {{ dado.audi }} - <a href="{{ url_for('deletar', id=dado.id) }}">Deletar</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/">Voltar ao Formulário</a>
+</body>
+</html>

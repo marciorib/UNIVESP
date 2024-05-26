@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário Cadastro</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static\estilo.css">
+
+</head>
+<body>
+    <header class="main_header container">
+        <div class="content">
+
+            <div class="main_header_logo">
+                <img src="static\img\favicon.png" alt="logo.png" title="Carrier"/>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="main_content container">
+        <section class="section-seu-codigo container"></section>
+
+    <form class="formulario" method="POST" action="/enviar">
+       <h1> <p> Cadastro Reclamacao </p> </h1>
+
+        <div class="field">
+            <label for="cip">Protocolo/CIP:</label>
+            <input type="text" id="cip" name="cip" placeholder="numero cip*" required>
+        </div>
+
+        <div class="field">
+            <label for="encomenda">Encomenda:</label>
+            <input type="text" id="encomenda" name="encomenda" placeholder="XX123456789BR*" required>
+        </div>
+
+        <div class="field">
+            <label for="orgao">Orgao Reclamante:</label>
+            <input type="text" id="orgao" name="orgao" placeholder="Procon/Reclame Aqui etc*" required>
+        </div>
+
+        <div class="field">
+            <label for="datarec">Data Recebimento da Reclamaçao:</label>
+            <input type="date" id="datarec" name="datarec">
+        </div>
+
+        <div class="field">
+            <label for="pi">Manifestaçao:</label>
+            <input type="text" id="pi" name="pi" placeholder="manifestacao*" required>
+        </div>
+
+        <div class="field">
+            <label for="motivo">Motivo:</label>
+            <input type="text" id="motivo" name="motivo" placeholder="Expoliacao/Quebra/Outros*" required>
+        </div>
+
+        <div class="field">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+        </div>
+
+        <div class="field">
+            <label for="telefone">Telefone/celular:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+        </div>
+
+        <div class="field">
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+        </div>
+        <div class="field radiobox">
+            <span>Sexo: </span>
+            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Masculino</label>
+            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Feminino</label>
+        </div>
+        <div class="field">
+            <label for="mensagem">Reclamaçao:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+        </div>
+
+        <div class="field">
+            <label for="audi">Audiencia:</label>
+            <input type="text" id="audi" name="audi" placeholder="Presencial/Virtual*" required>
+        </div>
+
+        <input type="submit" name="acao" value="Enviar">
+    </form>
+    </section>
+    </main>
+
+</body>
+</html>
